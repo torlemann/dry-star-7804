@@ -99,7 +99,9 @@ And I see a unique list of universities that this hospital's doctors attended
 ```
 
 ## Data you can use:
-Doctors:
+
+#### Doctors
+
 Name: Meredith Grey
 Specialty: General Surgery
 Education: Harvard University
@@ -116,12 +118,14 @@ Name: Derek McDreamy Shepherd
 Specialty: Attending Surgeon
 Education: University of Pennsylvania
 
-Hospitals:
+#### Hospitals
+
 Grey Sloan Memorial Hospital
 
 Seaside Health & Wellness Center
 
-Patients:
+#### Patients
+
 Name: Katie Bryce
 Age: 24
 
