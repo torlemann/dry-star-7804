@@ -97,8 +97,10 @@ Extension, Hospital Show Page
 As a visitor
 When I visit a hospital's show page
 I see the hospital's name
-And I see the number of doctors that work at this hospital
-And I see a unique list of universities that this hospital's doctors attended
+And I see the names of all doctors that work at this hospital,
+And next to each doctor I see the number of patients associated with the doctor,
+And I see the list of doctors is ordered from most number of patients to least number of patients
+(Doctor patient counts should be a single query)
 ```
 
 ## Data you can use:
