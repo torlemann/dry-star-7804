@@ -51,6 +51,8 @@ Seattle Grace is based off of Grey’s Anatomy, but you need NO knowledge of Gre
 * Doctors can have many patients
 * Patients can have many doctors
 
+Some of the initial model set up and testing has been done for you.
+
 ## User Stories
 
 ```
