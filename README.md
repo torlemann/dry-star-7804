@@ -20,11 +20,11 @@ When you run `bundle exec rspec` you should have 2 passing tests.
 * You are allowed to use any references including notes, Google, lesson plans, etc.
 * Read each story carefully before you start working.
 * Commit Frequently, about every 15 - 30 minutes
-* Push your code to your fork once the time is up (not before!)
+* Push your code to your fork **once the time is up (not before!)**
 
 ## Submission
 
-Once the time for the assessment is up, push your code to your fork and create a pull request to the `turingschool-examples` repository. Include the following:
+**Once the time for the assessment is up**, push your code to your fork and create a pull request to the `turingschool-examples` repository. Include the following:
 
 * Your Name
 * A reflection on how you felt you did with this challenge and what story you got through
