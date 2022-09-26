@@ -4,14 +4,14 @@ RSpec.describe Patient do
   it {should have_many :doctor_patients}
   it {should have_many(:doctors).through(:doctor_patients)}
 
-  describe 'instance methods' do
+  describe 'class methods' do
     it 'displays adult patients names' do
       patient_1 = Patient.create!(name: "Katie Bryce", age: 24)
       patient_2 = Patient.create!(name: "Denny Duquette", age: 39)
       patient_3 = Patient.create!(name: "Rebecca Pope", age: 32)
       patient_4 = Patient.create!(name: "Zola Shepherd", age: 2)
       
-      expect(patients.adult_patients).to eq(['Lavendar', 'Lily'])
+      expect(Patient.adult_patients).to eq(['Katie Bryce', 'Denny Duquette', 'Rebecca Pope'])
     end
   end
 end
