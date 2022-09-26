@@ -33,7 +33,7 @@ ActiveRecord::Schema.define(version: 2022_09_26_151556) do
   create_table "hospitals", force: :cascade do |t|
     t.string "name"
   end
-
+  
   create_table "patients", force: :cascade do |t|
     t.string "name"
     t.integer "age"
@@ -43,5 +43,6 @@ ActiveRecord::Schema.define(version: 2022_09_26_151556) do
 
   add_foreign_key "doctor_patients", "doctors"
   add_foreign_key "doctor_patients", "patients"
+
   add_foreign_key "doctors", "hospitals"
 end
