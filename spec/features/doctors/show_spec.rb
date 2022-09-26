@@ -30,7 +30,7 @@ RSpec.describe 'Doctor Show Page' do
     expect(page).to_not have_content("Zola Shepherd")
   end
 
-  xit "can remove patient from doctor's care" do 
+  it "can remove patient from doctor's care" do 
     hospital_1 = Hospital.create!(name: "Grey Sloan Memorial Hospital")
 
     doctor_1 = Doctor.create!(name: "Meredith Grey", specialty: "General Surgery", university: "Harvard University", hospital_id: hospital_1.id)
@@ -43,9 +43,9 @@ RSpec.describe 'Doctor Show Page' do
         expect(page).to have_content("Katie Bryce")
         expect(page).to have_button("Remove #{patient_1.name}")
         click_button "Remove #{patient_1.name}"
-        expect(current_path).to eq(doctor_path)
-        
+        expect(current_path).to eq(doctor_path(doctor_1))
     end
     expect(page).to_not have_content("Katie Bryce")
+    save_and_open_page
   end
 end
