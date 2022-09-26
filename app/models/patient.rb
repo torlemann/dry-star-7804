@@ -4,7 +4,7 @@ class Patient < ApplicationRecord
 
 
     def self.adult_patients
-      where('age >= 18').order(age: :asc).pluck(:name)
+      where('age >= 18').order(name: :asc).pluck(:name)
     end
 
   end

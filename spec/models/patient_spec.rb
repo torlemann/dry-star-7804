@@ -11,7 +11,7 @@ RSpec.describe Patient do
       patient_3 = Patient.create!(name: "Rebecca Pope", age: 32)
       patient_4 = Patient.create!(name: "Zola Shepherd", age: 2)
       
-      expect(Patient.adult_patients).to eq(['Katie Bryce', 'Rebecca Pope', 'Denny Duquette'])
+      expect(Patient.adult_patients).to eq(["Denny Duquette", "Katie Bryce", "Rebecca Pope"])
     end
   end
 end
