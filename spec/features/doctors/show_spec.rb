@@ -4,8 +4,8 @@ RSpec.describe 'Doctor Show Page' do
   it "has all of the doctor's atrributes and relationships" do 
     hospital_1 = Hospital.create!(name: "Grey Sloan Memorial Hospital")
 
-    doctor_1 = Doctor.create!(name: "Meredith Grey", specialty: "General Surgery", education: "Harvard University", hospital_id: hospital_1.id)
-    doctor_2 = Doctor.create!(name: "Meredith Gray", specialty: "General Surgery", education: "Harvard University", hospital_id: hospital_1.id)
+    doctor_1 = Doctor.create!(name: "Meredith Grey", specialty: "General Surgery", university: "Harvard University", hospital_id: hospital_1.id)
+    doctor_2 = Doctor.create!(name: "Meredith Gray", specialty: "General Surgery", university: "Harvard University", hospital_id: hospital_1.id)
 
     patient_1 = Patient.create!(name: "Katie Bryce", age: 24)
     patient_2 = Patient.create!(name: "Denny Duquette", age: 39)
@@ -21,7 +21,7 @@ RSpec.describe 'Doctor Show Page' do
 
     expect(page).to have_content(doctor_1.name)
     expect(page).to have_content(doctor_1.specialty)
-    expect(page).to have_content(doctor_1.education)
+    expect(page).to have_content(doctor_1.university)
     expect(page).to have_content(doctor_1.hospital_id)
     expect(page).to have_content("Katie Bryce")
     expect(page).to have_content("Denny Duquette")
