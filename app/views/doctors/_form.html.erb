@@ -1,5 +1,7 @@
   <%= form_with model: @patient, method: method, url: url, class: 'patient_form', local: true do |f| %>  
-    <%= f.label :name, 'Name:' %><br>
-    <%=  f.text_field :name%><br>
+    <%= f.label :patient_id %><br>
+    <%=  f.number_field :patient_id%><br>
+    <%= f.label :doctor_id %><br>
+    <%=  f.number_field :doctor_id%><br>
     <%= f.submit "Submit"%>
   <% end %>

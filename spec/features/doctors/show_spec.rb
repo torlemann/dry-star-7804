@@ -65,7 +65,8 @@ RSpec.describe 'Doctor Show Page' do
     expect(page).to have_content("Katie Bryce")
     expect(page).to_not have_content("Denny Duquette")
 
-    fill_in :name, with: "#{patient_2.name}"
+    fill_in :patient_id, with: "#{patient_2.id}"
+    fill_in :doctor_id, with: "#{doctor_1.id}"
     click_button "Submit"
 
     expect(current_path).to eq(doctor_path(doctor_1))

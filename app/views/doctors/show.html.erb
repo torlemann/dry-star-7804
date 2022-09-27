@@ -10,4 +10,4 @@
     </div>
 <% end %>
 <strong>Add Patient</strong>
-<%= render partial: 'form', locals: { method: :post, url: doctor_patients_path, class: 'patient_form', local: true}%>
+<%= render partial: 'form', locals: { method: :post, url: doctor_path(@doctor), class: 'patient_form', local: true}%>
