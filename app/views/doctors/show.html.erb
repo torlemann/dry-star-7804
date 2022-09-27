@@ -9,3 +9,5 @@
         <%= button_to "Remove #{patient.name}", doctor_path(@doctor), method: :delete%>
     </div>
 <% end %>
+<strong>Add Patient</strong>
+<%= render partial: 'form', locals: { method: :post, url: doctor_patients_path, class: 'patient_form', local: true}%>
