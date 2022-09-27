@@ -2,6 +2,6 @@
     <%= f.label :patient_id %><br>
     <%=  f.number_field :patient_id%><br>
     <%= f.label :doctor_id %><br>
-    <%=  f.number_field :doctor_id%><br>
+    <%=  f.number_field :doctor_id, value: @doctor.id %><br>
     <%= f.submit "Submit"%>
   <% end %>
